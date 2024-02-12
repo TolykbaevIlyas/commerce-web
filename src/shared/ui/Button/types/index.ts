@@ -1,6 +1,6 @@
 export interface IButton {
-    children: React.ReactNode;
-    type: 'submit' | 'button' | 'reset' | undefined;
-    className: string;
-    onClick: ()=> void;
+    children?: React.ReactNode;
+    type?: 'submit' | 'button' | 'reset' | undefined;
+    className?: string;
+    onClick?: ()=> void;
 }
