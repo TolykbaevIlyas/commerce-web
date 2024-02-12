@@ -7,6 +7,7 @@ import search from '../assets/img/Search.svg'
 import favourite from '../assets/img/Favourite.svg'
 import cart from '../assets/img/Cart.svg'
 import { Button } from '@/shared/ui/Button'
+import s from '../assets/styles/style.module.css'
 
 
 const Header = () => {
@@ -16,10 +17,10 @@ const Header = () => {
             <Link href={'/'}><Image src={logo} alt={'logo'}/></Link>
         </div>
         <nav className='flex gap-10'>
-            <Link href={'/'} className='font-semibold hover:font-bold duration-150'>Home</Link>
-            <Link href={'/'} className='font-semibold hover:font-bold duration-150'>Shop</Link>
-            <Link href={'/'} className='font-semibold hover:font-bold duration-150'>About</Link>
-            <Link href={'/'} className='font-semibold hover:font-bold duration-150'>Contact</Link>
+            <Link href={'/'} className={`font-semibold hover:font-bold duration-150 ${s.NavText}`}>Home</Link>
+            <Link href={'/'} className={`font-semibold hover:font-bold duration-150 ${s.NavText}`}>Shop</Link>
+            <Link href={'/'} className={`font-semibold hover:font-bold duration-150 ${s.NavText}`}>About</Link>
+            <Link href={'/'} className={`font-semibold hover:font-bold duration-150 ${s.NavText}`}>Contact</Link>
         </nav>
         <div className='flex gap-10'>
             <Button>
