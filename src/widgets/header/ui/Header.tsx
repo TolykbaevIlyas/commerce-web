@@ -1,4 +1,6 @@
-import React from 'react'
+'use client'
+
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from '../assets/img/Logo.svg'
@@ -8,9 +10,14 @@ import favourite from '../assets/img/Favourite.svg'
 import cart from '../assets/img/Cart.svg'
 import { Button } from '@/shared/ui/Button'
 import s from '../assets/styles/style.module.css'
+import { ShoppingModal } from '@/features/ShoppingModal'
 
 
 const Header = () => {
+
+    const [click, setClick] = useState(false);
+    console.log(click)
+
   return (
     <header className='flex justify-between items-center text-center py-5 bg-white shadow-xl px-20'>
         <div>
@@ -32,10 +39,11 @@ const Header = () => {
             <Button variant='2'>
                 <Image src={favourite} alt={'Favourite'} width={25}/>
             </Button>
-            <Button variant='2'>
+            <Button variant='2' onClick={()=> setClick(!click)}>
                 <Image src={cart} alt={'Cart'} width={25}/>
             </Button>
         </div>
+        {click ? <ShoppingModal click={click} setClick={() => setClick} /> : null}
     </header>
   )
 }
