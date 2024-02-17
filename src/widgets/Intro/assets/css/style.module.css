@@ -2,7 +2,6 @@
     background-image:url('../img/IntroBg.svg');
     background-repeat:no-repeat;
     background-position: top center;
-    background-attachment: fixed;
     min-height: 1020px;
     position: relative;
 	-webkit-background-size: cover;
@@ -12,7 +11,13 @@
 }
 
 .IntroBlock{
+    float: right;
     margin-right: 40px;
-    max-width: 700px;
+    width: 50vw;
     background-color: #FFF3E3;
+}
+
+.IntroText{
+    color:#B88E2F;
+    width: 25vw;
 }
