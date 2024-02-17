@@ -1,4 +1,5 @@
-import { ShoppingModal } from '@/entities/ShoppingModal'
+
+import { ShoppingModal } from '@/features/ShoppingModal'
 import { Intro } from '@/widgets/Intro'
 import Image from 'next/image'
 
