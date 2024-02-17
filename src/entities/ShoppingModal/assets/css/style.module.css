@@ -1,0 +1,14 @@
+.ModalWrapper{
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+}
+
+.ModalInner{
+    width: 30vw;
+    background-color:white;
+}

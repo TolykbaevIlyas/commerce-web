@@ -23,16 +23,16 @@ const Header = () => {
             <Link href={'/'} className={`font-semibold hover:font-bold duration-150 ${s.NavText}`}>Contact</Link>
         </nav>
         <div className='flex gap-10'>
-            <Button>
+            <Button variant='2'>
                 <Image src={user} alt={'Profile'} width={25}/>
             </Button>
-            <Button>
+            <Button variant='2'>
                 <Image src={search} alt={'Search'} width={25}/>
             </Button>
-            <Button>
+            <Button variant='2'>
                 <Image src={favourite} alt={'Favourite'} width={25}/>
             </Button>
-            <Button>
+            <Button variant='2'>
                 <Image src={cart} alt={'Cart'} width={25}/>
             </Button>
         </div>
