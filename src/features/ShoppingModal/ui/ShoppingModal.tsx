@@ -13,7 +13,7 @@ const ShoppingModal = ({click,setClick}: IShoppingModal) => {
   const Products = [{id:1, img: ProdImg, title: 'Book', price: 100},{id:2, img: ProdImg, title: 'Book', price: 100},{id:3, img: ProdImg, title: 'Book', price: 100}]
 
   return (
-    <div className={`${s.ModalWrapper} bg-black/40 z-20`}>
+    <div className={`${s.ModalWrapper} bg-black/40 z-20 duration-75`}>
       <div className={`${s.ModalInner} px-10 py-5`}>
         <div className='flex justify-between'>
           <h4 className='text-xl font-bold'>Shopping Cart</h4>

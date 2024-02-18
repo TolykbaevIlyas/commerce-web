@@ -1,5 +1,5 @@
 .ModalWrapper{
-    position: absolute;
+    position: fixed;
     top:0;
     right: 0;
     width: 100%;
@@ -11,4 +11,15 @@
     background-color:rgb(255, 255, 255);
     position: absolute;
     right: 0;
+    animation-name:ModalAnim;
+    animation-duration: 200ms;
+}
+
+@keyframes ModalAnim{
+    0%{
+        right: -30vw;
+    }
+    100%{
+        right: 0;
+    }
 }
