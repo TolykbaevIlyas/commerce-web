@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="">
       <Intro/>
-      <ShoppingModal/>
+      {/* <ShoppingModal/> */}
       {click ? <ShoppingModal click={click} setClick={() => setClick}/> : null}
     </main>
   )

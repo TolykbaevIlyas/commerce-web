@@ -43,7 +43,7 @@ const Header = () => {
                 <Image src={cart} alt={'Cart'} width={25}/>
             </Button>
         </div>
-        {click ? <ShoppingModal click={click} setClick={() => setClick} /> : null}
+        {click ? <ShoppingModal click={click} setClick={setClick} /> : null}
     </header>
   )
 }
