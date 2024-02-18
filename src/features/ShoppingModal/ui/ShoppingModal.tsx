@@ -16,7 +16,7 @@ const ShoppingModal = ({click,setClick}: IShoppingModal) => {
     <div className={`${s.ModalWrapper} bg-black/40 z-20 duration-75`}>
       <div className={`${s.ModalInner} px-10 py-5`}>
         <div className='flex justify-between'>
-          <h4 className='text-xl font-bold'>Shopping Cart</h4>
+          <h4 className={`text-xl font-bold ${s.ModalTitle}`}>Shopping Cart</h4>
           <Button variant='2' onClick={() => setClick(!click)}>
               <Image alt="Cancel" src={cancel}/>
           </Button>
@@ -29,13 +29,13 @@ const ShoppingModal = ({click,setClick}: IShoppingModal) => {
           <p>123,24</p>
         </div>
         <div className='flex gap-5 mt-5 pt-5 border-t-2 border-grey'>
-          <Button variant='3'>
+          <Button variant='3' className='hover:bg-black hover:text-white duration-75'>
             Cart
           </Button>
-          <Button variant='3'>
+          <Button variant='3' className='hover:bg-black hover:text-white duration-75'>
             Checkout
           </Button>
-          <Button variant='3'>
+          <Button variant='3' className='hover:bg-black hover:text-white duration-75'>
             Comparison
           </Button>
         </div>

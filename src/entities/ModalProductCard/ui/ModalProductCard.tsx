@@ -10,14 +10,14 @@ const ModalProductCard = ({image, title, price}:IModalProductCard) => {
   return (
     <div className='mt-5 flex justify-between'>
         <div className='flex '>
-          <Image alt="ProductImg" src={image}/>
+          <Image alt="ProductImg" src={image} width={100}/>
           <div className='flex flex-col ml-5 justify-center'>
-            <h5 className='text-lg font-bold'>{title}</h5>
-            <p>{count} X {price}</p>
+            <h5 className={`text-lg font-bold ${s.Title}`}>{title}</h5>
+            <p className={`${s.Count}`}>{count} X {price}</p>
           </div>
         </div>
         <div className={`${s.Cancel} flex cursor-pointer`}>
-            <Image alt="Cancel" src={cancel}/>
+            <Image alt="Cancel" src={cancel} width={20}/>
         </div>
     </div>
   )

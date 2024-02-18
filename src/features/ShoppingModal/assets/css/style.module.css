@@ -6,8 +6,13 @@
     height: 100%;
 }
 
+.ModalTitle{
+    font-size: 1vw;
+}
+
 .ModalInner{
     width: 30vw;
+    min-height: 42vw;
     background-color:rgb(255, 255, 255);
     position: absolute;
     right: 0;
