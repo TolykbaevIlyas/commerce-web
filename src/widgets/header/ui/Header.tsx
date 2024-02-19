@@ -16,7 +16,6 @@ import { ShoppingModal } from '@/features/ShoppingModal'
 const Header = () => {
 
     const [click, setClick] = useState(false);
-    console.log(click)
 
   return (
     <header className='flex justify-between items-center text-center py-5 bg-white shadow-xl px-20'>
