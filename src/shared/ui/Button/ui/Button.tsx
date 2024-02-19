@@ -11,7 +11,9 @@ const Button = ({children,onClick,className,type,variant}:IButton) => {
       className={`${className}
                   ${variant === "1" ? `  font-bold text-white bg-primary rounded-sm ${s.Button}` : null}
                   ${variant === "2" ? `` : null}
-                  ${variant === "3" ? ` font-bold text-black rounded-lg border-2 border-black ${s.Button}` : null}`}>
+                  ${variant === "3" ? ` font-bold text-black rounded-lg border-2 border-black ${s.Button}` : null}
+                  ${variant === "4" ? ` font-bold text-primary border-2 border-primary rounded-sm ${s.Button}` : null}`}
+                  >
         {children}
     </button>
   )

@@ -6,7 +6,7 @@ import { ICategoryCard } from '../types'
 const CategoryCard = ({name,img}:ICategoryCard) => {
   return (
     <div>
-        <Image src={img} alt={"Photo"}/>
+        <Image src={img} alt={"Photo"} width={400}/>
         <h4 className={`font-bold mt-2 ${s.Title}`}>{name}</h4>
     </div>
   )
