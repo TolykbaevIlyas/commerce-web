@@ -1,6 +1,7 @@
 'use client'
 import { ShoppingModal } from '@/features/ShoppingModal'
 import { Category } from '@/widgets/Category'
+import { DesignesCarousel } from '@/widgets/DesignesCarousel'
 import { Intro } from '@/widgets/Intro'
 import { ProductsShort } from '@/widgets/ProductsShort'
 import Image from 'next/image'
@@ -12,6 +13,7 @@ export default function Home() {
       <Intro/>
       <Category/>
       <ProductsShort/>
+      <DesignesCarousel/>
     </main>
   )
 }

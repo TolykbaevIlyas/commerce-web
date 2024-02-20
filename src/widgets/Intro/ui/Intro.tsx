@@ -4,7 +4,7 @@ import { Button } from '@/shared/ui/Button'
 
 const Intro = () => {
   return (
-    <main className={`${s.Intro}`}>
+    <main className={`${s.Intro} h-screen`}>
         <div className={`${s.IntroBlock} bg-primary2 px-10 py-20`}>
             <p className={`font-bold`}>New Arrival</p>
             <h3 className={`font-bold text-5xl mt-5 ${s.IntroText}`}>Discover Our New Collection</h3>
