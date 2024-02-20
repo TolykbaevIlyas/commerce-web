@@ -24,9 +24,9 @@ const Header = () => {
         </div>
         <nav className='flex gap-10'>
             <Link href={'/'} className={`font-semibold hover:font-bold duration-150 ${s.NavText}`}>Home</Link>
-            <Link href={'/'} className={`font-semibold hover:font-bold duration-150 ${s.NavText}`}>Shop</Link>
-            <Link href={'/'} className={`font-semibold hover:font-bold duration-150 ${s.NavText}`}>About</Link>
-            <Link href={'/'} className={`font-semibold hover:font-bold duration-150 ${s.NavText}`}>Contact</Link>
+            <Link href={'/Shop'} className={`font-semibold hover:font-bold duration-150 ${s.NavText}`}>Shop</Link>
+            <Link href={'/About'} className={`font-semibold hover:font-bold duration-150 ${s.NavText}`}>About</Link>
+            <Link href={'/Contact'} className={`font-semibold hover:font-bold duration-150 ${s.NavText}`}>Contact</Link>
         </nav>
         <div className='flex gap-10'>
             <Button variant='2'>

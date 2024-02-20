@@ -10,7 +10,6 @@ const ProductsCard = ({name,price,img,shortDescription}:IProductCard) => {
 
   const handleMouseOver = () => {
     setIsMouseOver(true);
-    console.log('Mouse Over')
   }
 
   const handleMouseOut = () => {
@@ -18,9 +17,9 @@ const ProductsCard = ({name,price,img,shortDescription}:IProductCard) => {
   }
 
   return (
-    <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className='cursor-pointer'>
+    <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className='cursor-pointer group-hover:bg-slate-300'>
         <Image src={img} alt={"ProductImg"} width={300}/>
-        <div className='flex flex-col bg-gray-100 px-5 py-2 gap-2'>
+        <div className='flex flex-col bg-gray-100 px-5 py-2 gap-2 '>
             <h4 className={`font-bold ${s.Title}`}>{name}</h4>
             <p className={`font-extralight ${s.Description}`}>{shortDescription}</p>
             <p className={`font-bold ${s.price}`}>{price} $</p>
