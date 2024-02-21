@@ -1,8 +1,15 @@
-.SliderCount{
+/* .Slider{
+    width: 100vw;
+    overflow: hidden;
+} */
+
+.Slides{
     position: relative;
-    float: right;
-    bottom: 6vw;
-    left: -19vw;
+    overflow: hidden;
+}
+
+.SliderCount{
+
 }
 
 .SliderDot{

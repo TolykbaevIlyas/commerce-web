@@ -6,9 +6,9 @@ import s from '../assets/css/style.module.css'
 
 const Carousel = ({slides}:ICarousel) => {
   return (
-    <div className={``}>
-        <div className='flex relative overflow-scroll'>
-          <div className='flex gap-16 absolute overflow-hidden'>
+    <div className={`relative ${s.Slider}`}>
+        <div className='relative'>
+          <div className={`flex relative overflow-hidden gap-20 ${s.Slides}`}>
             {slides.map((s) => <CarouselCard title={s.title} description={s.description} image={s.image}/>)}
           </div>
         </div>
