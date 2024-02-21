@@ -1,5 +1,5 @@
+import { ICarouselCard } from "@/entities/CarouselCard/types";
+
 export interface ICarousel{
-    title:string;
-    description:string;
-    img:string;
+    slides: ICarouselCard[];
 }

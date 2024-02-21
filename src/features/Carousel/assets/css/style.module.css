@@ -1,0 +1,11 @@
+.SliderCount{
+    position: relative;
+    float: right;
+    bottom: 6vw;
+    left: -19vw;
+}
+
+.SliderDot{
+    width: 0.5vw;
+    height: 0.5vw;
+}

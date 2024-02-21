@@ -6,10 +6,10 @@ import img from '../assets/img/CarouselImg.svg'
 
 const DesignesCarousel = () => {
     const carousel = [
-        {id:1,title:'Bed Room', Description:'Inner Place', img:img},
-        // {id:2,title:'Bed Room', Description:'Inner Place', img:img},
-        // {id:3,title:'Bed Room', Description:'Inner Place', img:img},
-        // {id:4,title:'Bed Room', Description:'Inner Place', img:img}
+        {id:1,title:'Bed Room', Description:'Inner Place', image:img},
+        {id:2,title:'Bed Room', Description:'Inner Place', image:img},
+        {id:3,title:'Bed Room', Description:'Inner Place', image:img},
+        {id:4,title:'Bed Room', Description:'Inner Place', image:img}
     ]
 
   return (
@@ -20,7 +20,7 @@ const DesignesCarousel = () => {
                 <p className={`${s.Description} font-light`}>Our designer already made a lot of beatiful prototype of rooms that ispire you</p>
                 <Button variant='1' className='hover:bg-primary3 hover:text-primary hover:border-2 hover:border-black duration-100'>Explore More</Button>
             </div>
-            {carousel.map((c)=><Carousel key={c.id} title={c.title} description={c.Description} img={c.img}/>)}
+            <Carousel slides={carousel}/>
         </div>
     </div>
   )
