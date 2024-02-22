@@ -1,17 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { ICarousel } from '../types'
 import Image from 'next/image'
 import { CarouselCard } from '@/entities/CarouselCard'
 import s from '../assets/css/style.module.css'
 
 const Carousel = ({slides}:ICarousel) => {
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+  };
+
   return (
     <div className={`relative ${s.Slider}`}>
         <div className='relative'>
-          <div className={`flex relative overflow-hidden gap-20 ${s.Slides}`}>
+          <div className={`flex relative overflow-hidden gap-20 ${s.Slides}`} style={{
+          transform: `translateX(-${currentSlide * (100 / slides.length)}%)`,
+        }}>
             {slides.map((s) => <CarouselCard title={s.title} description={s.description} image={s.image}/>)}
           </div>
         </div>
+        <button
+          className={`${s.nextSlideBtn} text-primary`}
+          onClick={nextSlide}
+        >
+          &gt;
+        </button>
         <div className={`flex gap-2 ${s.SliderCount}`}>
           {slides.map(()=> <div className={`bg-gray-300 border-2 border-gray-300 rounded-full  ${s.SliderDot}`}></div>)}
         </div>
