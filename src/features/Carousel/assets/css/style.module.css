@@ -6,6 +6,7 @@
 .Slides{
     position: relative;
     overflow: hidden;
+    height: 40vw;
 }
 
 .SliderCount{
@@ -23,7 +24,7 @@
     position: absolute;
     text-align: center;
     top:45%;
-    left: 45vw;
+    left: 40vw;
     width: 2vw;
     height: 2vw;
     border:2px solid inherit;
@@ -36,5 +37,6 @@
 
 .currentSlideCss{
     width: 30vw;
-    transition-duration: 100ms;
+    transition: width 400ms;
+    transition:width 400ms  ;
 }

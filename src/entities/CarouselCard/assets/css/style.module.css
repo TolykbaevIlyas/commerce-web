@@ -1,6 +1,4 @@
 .CarouselCard{
+    position: relative;
     width: 20vw;
-}
-.CarouselCard:first-child{
-    
 }

@@ -13,7 +13,7 @@ const DesignesCarousel = () => {
     ]
 
   return (
-    <div className='flex justify-start pl-72 mt-10 gap-20 bg-primary3'>
+    <div className={`flex justify-start pl-72 mt-10 gap-20 bg-primary3 ${s.DSliderBlock}`}>
         <div className='flex justify-center gap-20 mt-10'>
             <div className={`flex flex-col gap-3 justify-center ${s.TextBlock} z-10`}>
                 <h3 className={`${s.Title} font-bold`}>50+ Beatiful rooms inspiration</h3>

@@ -32,7 +32,7 @@ const Carousel = ({slides}:ICarousel) => {
           &gt;
         </button>
         <div className={`flex gap-2 ${s.SliderCount}`}>
-          {slides.map(()=> <div className={`bg-gray-300 border-2 border-gray-300 rounded-full  ${s.SliderDot}`}></div>)}
+          {slides.map((sl)=> <div key={sl.id} className={`bg-gray-300 border-2 border-gray-300 rounded-full duration-100  ${s.SliderDot} ${currentSlide + 1 == sl.id ? 'bg-primary border-2 border-primary' : null}`}></div>)}
         </div>
     </div>
   )

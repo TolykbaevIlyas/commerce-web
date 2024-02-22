@@ -4,6 +4,7 @@ import { Category } from '@/widgets/Category'
 import { DesignesCarousel } from '@/widgets/DesignesCarousel'
 import { Intro } from '@/widgets/Intro'
 import { ProductsShort } from '@/widgets/ProductsShort'
+import { Share } from '@/widgets/Share'
 import Image from 'next/image'
 import { useState } from 'react'
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Category/>
       <ProductsShort/>
       <DesignesCarousel/>
+      <Share/>
     </main>
   )
 }
