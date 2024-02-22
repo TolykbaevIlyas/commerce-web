@@ -33,3 +33,8 @@
     background-color: rgb(255, 241, 233);
     
 }
+
+.currentSlideCss{
+    width: 30vw;
+    transition-duration: 100ms;
+}

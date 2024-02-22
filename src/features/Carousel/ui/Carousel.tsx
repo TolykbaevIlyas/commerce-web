@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { ICarousel } from '../types'
 import Image from 'next/image'
 import { CarouselCard } from '@/entities/CarouselCard'
@@ -19,10 +19,10 @@ const Carousel = ({slides}:ICarousel) => {
   return (
     <div className={`relative ${s.Slider}`}>
         <div className='relative'>
-          <div className={`flex relative overflow-hidden gap-20 ${s.Slides}`} style={{
-          transform: `translateX(-${currentSlide * (100 / slides.length)}%)`,
-        }}>
-            {slides.map((s) => <CarouselCard title={s.title} description={s.description} image={s.image}/>)}
+          <div className={`flex relative overflow-hidden gap-20 duration-200  ${s.Slides}`} style={{
+              transform: `translateX(-${currentSlide * (100 / slides.length)}%)`,
+            }}>
+            {slides.map((sl) => <CarouselCard key={sl.id} title={sl.title} description={sl.description} image={sl.image} className={`${currentSlide + 1 == sl.id ? s.currentSlideCss : null}`}/>)}
           </div>
         </div>
         <button
