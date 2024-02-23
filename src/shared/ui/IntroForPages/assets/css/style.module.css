@@ -1,0 +1,8 @@
+.IntroFPagesBg{
+    background-image: url('../image/Intro.svg');
+    height: 300px;
+}
+
+.IntroTitle{
+    font-size: 2vw;
+}

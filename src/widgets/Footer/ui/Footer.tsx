@@ -6,7 +6,7 @@ import s from '../assets/css/style.module.css'
 
 const Footer = () => {
   return (
-    <div className='border-t-2 border-gray-300'>
+    <div className='border-t-2 border-gray-300 mt-20'>
        <div className='flex justify-between mx-20'>
         <div className='mt-10'>
                 <h5 className={`font-extrabold ${s.Title}`}>Funiro</h5>

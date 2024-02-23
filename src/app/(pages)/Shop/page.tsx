@@ -1,8 +1,12 @@
+import { IntroForPages } from '@/shared/ui/IntroForPages'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>Shop</div>
+    <div>
+      <IntroForPages pageName='Shop'/>
+      Shop
+    </div>
   )
 }
 
