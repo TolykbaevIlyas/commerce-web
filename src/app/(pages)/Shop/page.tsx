@@ -5,7 +5,6 @@ const page = () => {
   return (
     <div>
       <IntroForPages pageName='Shop'/>
-      Shop
     </div>
   )
 }
