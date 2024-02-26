@@ -15,6 +15,7 @@ const config: Config = {
         'primary': '#B88E2F',
         'primary2': '#FFF3E3',
         'primary3': '#FCF8F3',
+        'primary4': '#F9F1E7',
       }
     },
   },

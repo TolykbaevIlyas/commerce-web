@@ -18,9 +18,9 @@ const Carousel = ({slides}:ICarousel) => {
 
   return (
     <div className={`relative ${s.Slider}`}>
-        <div className='relative'>
+        <div className='relative overflow-hidden'>
           <div className={`flex relative overflow-hidden gap-20 duration-200  ${s.Slides}`} style={{
-              transform: `translateX(-${currentSlide * (100 / slides.length)}%)`,
+              transform: `translateX(-${currentSlide * (90 / slides.length)}%)`,
             }}>
             {slides.map((sl) => <CarouselCard key={sl.id} title={sl.title} description={sl.description} image={sl.image} className={`${currentSlide + 1 == sl.id ? s.currentSlideCss : null}`}/>)}
           </div>

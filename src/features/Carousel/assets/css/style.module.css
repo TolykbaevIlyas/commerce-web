@@ -1,7 +1,7 @@
-/* .Slider{
-    width: 100vw;
-    overflow: hidden;
-} */
+.Slider{
+    /* width: 100vw; */
+    /* overflow: hidden; */
+}
 
 .Slides{
     position: relative;
@@ -24,7 +24,7 @@
     position: absolute;
     text-align: center;
     top:45%;
-    left: 40vw;
+    left: 45vw;
     width: 2vw;
     height: 2vw;
     border:2px solid inherit;
