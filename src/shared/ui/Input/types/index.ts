@@ -3,5 +3,5 @@ export interface IInput{
     placeholder?: string;
     value?: string;
     className?: string;
-    onChange?: (value: string) => void | undefined;
+    onChange?: (value: string) => void | undefined | any;
 }

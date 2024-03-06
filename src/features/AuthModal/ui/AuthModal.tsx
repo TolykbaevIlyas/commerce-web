@@ -21,7 +21,7 @@ const LoginModal = ({click,setClick}:ILoginModal) => {
                 <Image alt="Cancel" src={cancel}/>
             </Button>
             </div>
-            {isLogin ? <Login change={setIsLogin} changeStatus={isLogin}/> : <Register change={setIsLogin} changeStatus={isLogin}/>}
+            {/* {isLogin ? <Login change={setIsLogin} changeStatus={isLogin}/> : <Register change={setIsLogin} changeStatus={isLogin}/>} */}
             <div className='flex justify-center mt-5 pt-5 border-t-2 border-grey'>
             <Button variant='3' className='hover:bg-black hover:text-white duration-75'>
                 Login
