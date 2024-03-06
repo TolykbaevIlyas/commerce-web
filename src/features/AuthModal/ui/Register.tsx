@@ -4,7 +4,7 @@ import { Input } from '@/shared/ui/Input';
 import React, { useEffect, useState } from 'react'
 
 interface IRegister {
-    change: () => void;
+    change:any;
     changeStatus: boolean;
 }
 

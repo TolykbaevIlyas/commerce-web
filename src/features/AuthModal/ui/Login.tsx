@@ -3,7 +3,7 @@ import { Input } from '@/shared/ui/Input'
 import React, { useState } from 'react'
 
 interface ILogin {
-    change: () => void;
+    change: any;
     changeStatus: boolean;
 }
 
