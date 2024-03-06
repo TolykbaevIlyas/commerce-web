@@ -8,8 +8,8 @@ interface ILogin {
 }
 
 const Login = ({change,changeStatus}:ILogin) => {
-    const [login, setLogin] = useState();
-    const [register, setRegister] = useState();
+    const [login, setLogin] = useState<string | undefined>(undefined);;
+    const [register, setRegister] = useState<string | undefined>(undefined);;
 
   return (
     <div className='flex flex-col border-t-2 border-grey bg'>
