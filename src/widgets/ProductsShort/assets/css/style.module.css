@@ -1,9 +1,13 @@
 .Title {
     font-size: 2vw;
+    font-weight: 800;
+    text-align: center;
 }
 
 .Products{
     display: flex;
-    flex-direction: row;
-    width: 20vw;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-top: 2rem;
 }

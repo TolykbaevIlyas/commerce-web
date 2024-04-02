@@ -20,12 +20,29 @@ const ProductsShort = () => {
     ]
   return (
     <div className='mt-5 mx-40'>
-        <h3 className={`${s.Title} font-extrabold text-center`}>Our Products</h3>
-        <div className={`flex justify-center gap-8 flex-wrap mt-10`}>
-            {product.map((p)=><ProductsCard key={p.id} name={p.name} shortDescription={p.shortDesc} price={p.price} img={p.img}/>)}
+
+        <h3 className={`${s.Title}`}>Our Products</h3>
+
+        <div className={`${s.Products}`}>
+
+            {
+                product.map(
+                    (p)=>
+                        <ProductsCard 
+                            key={p.id} 
+                            name={p.name} 
+                            shortDescription={p.shortDesc} 
+                            price={p.price} 
+                            img={p.img}/>
+                )
+            }
+
         </div>
+
         <div className='flex justify-center mt-10'>
-            <Button variant='4' className=' hover:bg-primary hover:text-white duration-100'>Show More</Button>
+            <Button variant='4' className=' hover:bg-primary hover:text-white duration-100'>
+                Show More
+            </Button>
         </div>
     </div>
   )
