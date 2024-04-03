@@ -1,15 +1,28 @@
 .DSliderBlock{
+    display: flex;
+    padding-left: 10rem;
     height: 45vw;
+    overflow: hidden;
+    margin-top: 1rem;
+    gap:2rem
+}
+
+.TextBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 30vw;
+    justify-content: center;
+    z-index: 10;
 }
 
 .Title{
     font-size: 2.5vw;
+    font-weight: 700;
 }
 
 .Description{
     font-size: 1vw;
+    font-weight: 300;
 }
 
-.TextBlock{
-    width: 30vw;
-}
