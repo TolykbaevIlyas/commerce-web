@@ -17,12 +17,26 @@ const Carousel = ({slides}:ICarousel) => {
   };
 
   return (
-    <div className={`relative ${s.Slider}`}>
+    <div className={`${s.Slider}`}>
         <div className='relative overflow-hidden'>
-          <div className={`flex relative overflow-hidden gap-20 duration-200  ${s.Slides}`} style={{
+          <div className={`${s.Slides}`} 
+          style={{
               transform: `translateX(-${currentSlide * (90 / slides.length)}%)`,
             }}>
-            {slides.map((sl:any) => <CarouselCard key={sl.id} title={sl.title} description={sl.description} image={sl.image} className={`${currentSlide + 1 == sl.id ? s.currentSlideCss : null}`}/>)}
+
+            {
+              slides.map(
+                (sl:any) => 
+                  <CarouselCard 
+                    key={sl.id} 
+                    title={sl.title} 
+                    description={sl.description} 
+                    image={sl.image} 
+                    className={`${currentSlide + 1 == sl.id ? s.currentSlideCss 
+                    : null}`}
+                  />
+                )
+              }
           </div>
         </div>
         <button
@@ -32,7 +46,13 @@ const Carousel = ({slides}:ICarousel) => {
           &gt;
         </button>
         <div className={`flex gap-2 ${s.SliderCount}`}>
-          {slides.map((sl:any)=> <div key={sl.id} className={`bg-gray-300 border-2 border-gray-300 rounded-full duration-100  ${s.SliderDot} ${currentSlide + 1 == sl.id ? 'bg-primary border-2 border-primary' : null}`}></div>)}
+          {
+            slides.map(
+              (sl:any) => 
+                <div 
+                  key={sl.id} 
+                  className={`bg-gray-300 border-2 border-gray-300 rounded-full duration-100  ${s.SliderDot} ${currentSlide + 1 == sl.id ? 'bg-primary border-2 border-primary' : null}`}></div>)
+          }
         </div>
     </div>
   )
